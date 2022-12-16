@@ -30,7 +30,10 @@ urlpatterns = [
     # 3 ES EL NOMBRE LA URL (aun no lo usamos)
     path('', views.Home, name = 'home'),
     #No necesariamente estos 3 valores (parametors) se deben llamar igual
-    path('Nosotros/', views.Nosotros, name = 'nosotros'),
+    path('Castracion/', views.Castracion, name = 'castracion'),
+    path('Vacunacion/', views.Vacunacion, name = 'vacunacion'),
+    path('Donar/', views.Donar, name = 'donar'),
+    path('Veterinarios/', views.Veterinarios, name = 'veterinarios'),
 
     #LOGIN
     path('login/',auth.LoginView.as_view(template_name='usuarios/login.html'),name='login'),
